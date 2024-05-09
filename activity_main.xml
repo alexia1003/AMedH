@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pink_red_illustration_heart_day_instagram_story"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/clinic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMedH"
+        android:textColor="#A291C7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text="Orar de functionare: 9 - 17 zilnic"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/clinic_name"
+        app:layout_constraintTop_toBottomOf="@id/clinic_name" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Locatie: Str Liliacului nr 51, MS"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/schedule"
+        app:layout_constraintTop_toBottomOf="@id/schedule" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Telefon: 1111 333 777"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/location"
+        app:layout_constraintTop_toBottomOf="@id/location" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email: pacienti@amedh.com"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/phone_number"
+        app:layout_constraintTop_toBottomOf="@id/phone_number" />
+
+    <ImageButton
+        android:id="@+id/button_telephone"
+        android:layout_width="110dp"
+        android:layout_height="112dp"
+        android:background="#9AD81B60"
+        android:backgroundTint="#E17676"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:src="@drawable/download"
+        android:textColor="#E9E2F0"
+        android:textColorHighlight="#F692E0"
+        android:textColorLink="#F692E0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="175dp"
+        android:layout_height="63dp"
+        android:background="#9AD81B60"
+        android:backgroundTint="#E17676"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:text="Selecteaza un departament"
+        android:textColor="#E9E2F0"
+        android:textColorHighlight="#F692E0"
+        android:textColorLink="#F692E0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.328"
+        app:rippleColor="#F6F6F6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

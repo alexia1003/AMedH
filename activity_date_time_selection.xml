@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilac"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/selectDateTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Selecteaza ziua si ora"
+        android:textColor="#A291C7"
+        android:textSize="26sp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="385dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="260dp"
+        android:layout_height="323dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="63dp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="#9AD81B60"
+        android:backgroundTint="#E17676"
+        android:text="Finalizeaza programarea"
+        android:textColor="#E9E2F0"
+        android:textSize="18sp" />
+
+</RelativeLayout>

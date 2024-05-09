@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilac"
+    tools:context=".SymptomsActivity">
+
+    <TextView
+        android:id="@+id/symptomsLabel"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="94dp"
+        android:text="Introdu simptome:"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/symptomsEditText"
+        android:layout_width="259dp"
+        android:layout_height="94dp"
+        android:layout_below="@id/symptomsLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="73dp"
+        android:hint="Introdu simptomele aici" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="91dp"
+        android:text="Nume si Prenume:"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="73dp"
+        android:hint="Introdu numele si prenumele aici" />
+
+    <TextView
+        android:id="@+id/contactInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informatii de contact:"
+        android:textSize="24sp"
+        android:layout_below="@id/nameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/contactInfoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactInfoLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:hint="Introdu informatiile de contact aici"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="175dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/contactInfoEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="87dp"
+        android:background="#9AD81B60"
+        android:backgroundTint="#E17676"
+        android:textColor="#E9E2F0"
+        android:text="Trimite programarea"
+        android:textSize="18sp" />
+
+</RelativeLayout>
